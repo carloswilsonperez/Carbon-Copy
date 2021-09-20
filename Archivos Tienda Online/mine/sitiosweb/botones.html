@@ -1,0 +1,105 @@
+<html>
+
+<head>
+<title>Barra de Botones de Navegación</title>
+<script language="javascript" type="text/javascript">
+<!--
+   var boton2,boton3,boton4,boton5,boton6,sombra1,sombra2,sombra3,sombra4,sombra5,sombra6;
+
+
+   boton1=new Image(100,40); boton1.src="botones/boton_1.jpg";
+   boton2=new Image(100,40); boton2.src="botones/boton_2.jpg";
+   boton3=new Image(100,40); boton3.src="botones/boton_3.jpg";
+   boton4=new Image(100,40); boton4.src="botones/boton_4.jpg";
+   boton5=new Image(100,40); boton5.src="botones/boton_5.jpg";
+   boton6=new Image(100,40); boton6.src="botones/boton_6.jpg";
+   boton7=new Image(100,40); boton7.src="botones/boton_7.jpg";
+
+   sombra1=new Image(100,40); sombra1.src="botones/sombra_1.jpg";
+   sombra2=new Image(100,40); sombra2.src="botones/sombra_2.jpg";
+   sombra3=new Image(100,40); sombra3.src="botones/sombra_3.jpg";
+   sombra4=new Image(100,40); sombra4.src="botones/sombra_4.jpg";
+   sombra5=new Image(100,40); sombra5.src="botones/sombra_5.jpg";
+   sombra6=new Image(100,40); sombra6.src="botones/sombra_6.jpg";
+   sombra7=new Image(100,40); sombra7.src="botones/sombra_7.jpg";
+
+   var texto="Me da Mucho Gusto que me Visites!!      Mis mails: cwilson1974@hotmail.com     cwilson1974@yahoo.com.mx";
+   var visualizacion="inicio";
+   function mueve() {
+                      if (visualizacion=="inicio") {  for (var i=1; i<=140; i++)
+                                                          { texto=" "+texto; }
+                                                       visualizacion=texto;
+                                                   }
+                      visualizacion=visualizacion.substring(1,visualizacion.length);
+                      window.status=visualizacion;
+                      if (visualizacion=="") { visualizacion=texto; }
+                      setTimeout ("mueve()",60);
+                     }
+
+  function tiempo() {
+    var tiempo, hora, min, seg, horario;
+    tiempo = new Date();
+    hora = tiempo.getHours();  if (hora>12) {hora=hora - 12;
+                                             document.form2.boton2.value="PM"; }
+
+                                   else     {document.form2.boton2.value="AM"; }
+    if (hora<10) {hora="0" + hora; }
+    min = tiempo.getMinutes(); if (min<10) {min="0" + min; }
+    seg = tiempo.getSeconds(); if (seg<10) {seg="0" + seg; }
+    horario=hora + ":" + min + ":" + seg;
+    document.form1.boton.value=horario;
+    setTimeout ("tiempo()",1000);
+  }
+
+
+//-->
+</script>
+
+<style type="text/css">
+<!--
+     
+     .but2 {position:absolute; top: 165px; left: 0px}
+     .but3 {position:absolute; top: 205px; left: 0px}
+     .but1 {position:absolute; top: 245px; left: 0px}
+     .but4 {position:absolute; top: 285px; left: 0px}
+     .but5 {position:absolute; top: 325px; left: 0px}
+     .but6 {position:absolute; top: 365px; left: 0px}
+     .but7 {position:absolute; top: 405px; left: 0px}
+     .reloj {position: absolute; top: 455px; left: 15px}
+     .merid {position: absolute; top: 480px; left: 35px}
+     .mundo {position: absolute; top: 0px; left: 0px; width:100px; height:70px; background-color: black}
+     body { background-color:#0099CC}
+ -->
+</style>
+
+</head>
+
+<body onLoad="mueve();tiempo()" leftmargin=0 topmargin=0>
+
+
+
+<DIV CLASS="mundo" ID="mundo">&nbsp;&nbsp;
+  <img src="imagenes/mundo.gif"  width="74" height="70">
+</DIV>
+
+
+<IMG CLASS=but2 src="botones/boton_2.jpg" NAME="but2" onMouseover="document.but2.src=sombra2.src" onMouseout="document.but2.src=boton2.src" onclick="parent.presen.location.href='curriculum.html'" width="100" height="40">
+<IMG CLASS=but3 src="botones/boton_3.jpg" NAME="but3" onMouseover="document.but3.src=sombra3.src" onMouseout="document.but3.src=boton3.src" onclick="parent.presen.location.href='habilidades.html'" width="100" height="40">
+<IMG CLASS=but1 src="botones/boton_1.jpg" NAME="but1" onMouseover="document.but1.src=sombra1.src" onMouseout="document.but1.src=boton1.src" onclick="parent.presen.location.href='navy.html'" width="100" height="40">
+<IMG CLASS=but4 src="botones/boton_4.jpg" NAME="but4" onMouseover="document.but4.src=sombra4.src" onMouseout="document.but4.src=boton4.src" onclick="parent.presen.location.href='enlaces.html'" width="100" height="40">
+<IMG CLASS=but5 src="botones/boton_5.jpg" NAME="but5" onMouseover="document.but5.src=sombra5.src" onMouseout="document.but5.src=boton5.src" onclick="parent.presen.location.href='tutorial.html'" width="100" height="40">
+<IMG CLASS=but6 src="botones/boton_6.jpg" NAME="but6" onMouseover="document.but6.src=sombra6.src" onMouseout="document.but6.src=boton6.src" onclick="parent.presen.location.href='escribeme.html'" width="100" height="40">
+<A HREF="cweb/index.html" target="_blank"><IMG CLASS=but7 src="botones/boton_7.jpg" border=0 NAME="but7" onMouseover="document.but7.src=sombra7.src" onMouseout="document.but7.src=boton7.src" width="100" height="40"></a>
+
+
+<DIV CLASS=reloj>
+<form name="form1" id="form1">
+   <input type="button" name="boton" id="boton" value="- Hora -"  style="color:#fffaf0; background-color:#0099CC" />
+</form></DIV>
+<DIV CLASS=merid>
+<form name="form2" id="form2">
+   <input type="button" name="boton2" id="boton2" value="- AM -"  style="color:#fffaf0; background-color:#0099CC" />
+</form></DIV>
+
+</body>
+</html>

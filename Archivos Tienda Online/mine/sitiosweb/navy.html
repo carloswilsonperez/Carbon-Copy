@@ -1,0 +1,136 @@
+<html>
+<head>
+<script>
+
+var numImg=0;
+var demo;
+demo = new Array();
+   demo[0]="imagenes/fiesta.gif"
+   demo[1]="imagenes/templo.bmp"
+   demo[2]="imagenes/templo2.gif"
+   demo[3]="imagenes/templo3.gif"
+   demo[4]="imagenes/ejercicio13d.gif"
+   demo[5]="imagenes/ejercicio23d.bmp"
+   demo[6]="imagenes/ejercicio33d.bmp"
+   demo[7]="imagenes/trailer.gif"
+   demo[8]="imagenes/cohete.gif"
+   demo[9]="imagenes/cohete2.gif"
+   demo[10]="imagenes/cubo.gif"
+   demo[11]="imagenes/cotas.gif"
+   demo[12]="imagenes/practica19.gif"
+   demo[13]="imagenes/practica21.gif"
+   demo[14]="imagenes/textos.gif"
+
+
+function avanza() {
+      numImg++; if (numImg > 14) {
+                                  numImg=0;}
+      document.images['demo'].src=demo[numImg];
+ }
+
+function retrocede() {
+      numImg=numImg-1;
+      if (numImg < 0) {
+                       numImg=14;}
+      document.images['demo'].src=demo[numImg];
+ }
+
+
+
+  var tiempo=40;
+  var origen=0;
+  var i=0;
+  function film() {
+
+                      i=i+1;
+                      if ( (origen-i)<= -140 ) {
+                                      i=0;
+                                      origen=140 }
+                      mostrador.style.top=origen- i ;
+                      setTimeout("film()",tiempo);
+
+     }
+
+
+</script>
+<style>
+.cuadro {
+        position:absolute;
+        left: 655px;
+        top: 10px;
+        text-align:justify;
+        font-family:Verdana,Arial;
+        font-size: 10pt;
+        background-color: green;
+        color: white;
+        width: 230px;
+        padding: 10px;
+}
+
+.pantalla {position:absolute;
+            top:110px;
+            left:675px;
+            width:200px;
+            height:170px;
+            border: 5px solid black;
+            background-color:#0099cc;
+            z-index:0;
+            overflow:hidden; }
+
+.mostrador {position:absolute;
+            top:10px;
+            left:0px;
+            width:190px;
+            height:160px;
+            font-size:8pt;
+            font-family:verdana,arial;
+            font-weight:600;
+            background-color:#0099cc;
+            padding:10px;
+            text-align:left;
+            z-index:0;
+            color:white }
+
+
+</style>
+</head>
+
+
+
+<body bgcolor="#F5F5F5" leftmargin=0 topmargin=0 onLoad="setTimeout('film()',3000)">
+
+  <div class=cuadro>
+
+  Está Ud. viendo algunos de mis dibujos realizados con AutoCAD2002, en formato GIF.
+
+</div>
+
+<img src="imagenes/fiesta.gif" name=demo id=demo width=640 height=480  style="border-style:groove;border-width:2px;border-color:#fffaf0;position:relative;left:4px">
+
+
+
+  <div ID="pantalla" class=pantalla >
+
+  <div ID="mostrador" class=mostrador >
+
+
+  Haga Click en Avanzar<br>
+  o en Retroceder<br>
+  para poder ver las imágenes...<br>&nbsp;<br>&nbsp;<br>
+  Aquí podrá conocer<br>
+  mis trabajos de AutoCAD<br>
+
+</div>
+
+</div>
+
+<form>
+   <input type=button style="position: absolute; left: 732px; top: 290px;color:#fffaf0; background-color:#ff3300" name=retro id=retro value=Retroceder onClick="retrocede()">
+   <input type=button style="position: absolute; left: 747px; top: 320px;color:#fffaf0; background-color:#669900" name=sig id=sig value=Avanzar        onClick="avanza()">
+   <input type=button style="position: absolute; left: 720px; top: 350px;color:#fffaf0; background-color:#0099CC" name=inicio id=inicio value="Volver a Inicio" onClick="parent.presen.location.href='presen.html'">
+</form>
+
+
+
+</body>
+</html>

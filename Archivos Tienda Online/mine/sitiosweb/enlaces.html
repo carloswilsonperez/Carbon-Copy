@@ -1,0 +1,322 @@
+<html>
+<head><LINK REL="stylesheet" TYPE="text/css" HREF="estilos_texto.css" />
+<style>
+a {color:white}
+
+ .header { font-family:Verdana,Arial; text-align: left }
+
+.cuadro {position:absolute;
+         left: 50px;
+         top: 30px;
+         COLOR: WHITE;
+         background-color: #0099CC;
+         border-color: black;
+         border-style: double;
+         border-width:5x;
+}
+
+.pantalla {position:absolute;
+           top:0px;
+           left:600px;
+           width:200px;
+           height:170px;
+           border: 5px solid black;
+           background-color:#0099cc;
+           z-index:0;
+           overflow:hidden; }
+
+.mostrador {position:absolute;
+            top:0px;
+            left:0px;
+            width:190px;
+            height:160px;
+            font-size:8pt;
+            font-family:verdana, arial;
+            font-weight:600;
+            background-color:#0099cc;
+            padding:10px;
+            text-align:left;
+            z-index:0;
+            color:white }
+
+.diarios {
+            position: absolute;
+            top: 70px;
+            visibility: hidden;
+            left: 235px;
+            width: 360px;
+            background-color: #666633;
+            color: white;
+            font-family:verdana,arial;
+            font-size:9pt;
+            padding: 5px;
+            border-style: groove;
+            z-index:10;
+
+           }
+
+.compus {
+            position: absolute;
+            top: 127px;
+            visibility: hidden;
+            left: 292px;
+            width: 430px;
+            background-color: #666633;
+            color: white;
+            font-family:verdana,arial;
+            font-size:9pt;
+            padding: 5px;
+            border-style: groove;
+            z-index:10;
+
+           }
+
+.mails {
+            position: absolute;
+            top: 180px;
+            visibility: hidden;
+            left: 301px;
+            width: 250px;
+            background-color: #666633;
+            color: black;
+            font-family:verdana,arial;
+            font-size:9pt;
+            padding: 5px;
+            border-style: groove;
+            z-index:10;
+           }
+
+.mexicanas {
+            position: absolute;
+            top: 235px;
+            visibility: hidden;
+            left: 272px;
+            width: 330px;
+            background-color: #666633;
+            color: black;
+            font-family:verdana,arial;
+            font-size:9pt;
+            padding:5px;
+            border-style:groove;
+            z-index:10;
+           }
+
+.mundo {
+              position: absolute;
+              left:275px;
+              top:265px;
+              visibility: hidden;
+              background-color:#666633;
+              color: #fffaf0;
+              font-family: verdana,arial;
+              font-size: 9pt;
+              padding: 5px;
+              border-style:groove;
+              z-index:10;
+            }
+
+.gobierno  {
+              position: absolute;
+              left:261px;
+              top:337px;
+              width:430px;
+              visibility: hidden;
+              background-color: #666633;
+              color:#fffaf;
+              font-family:verdana,arial;
+              font-size: 9pt;
+              padding: 5px;
+              border-style:groove;
+              z-index:10;
+            }
+
+</style>
+
+<script language="javascript" type="text/javascript">
+<!--
+
+
+
+
+  var tiempo=40;
+  var origen=0;
+  var i=0;
+  function film() {
+
+                      i=i+1;
+                      if ( (origen-i)<= -140 ) {
+                                      i=0;
+                                      origen=140 }
+                      mostrador.style.top=origen- i ;
+                      setTimeout("film()",tiempo);
+
+     }
+
+
+function muestra_diarios() {
+     document.all['diarios'].style.visibility="visible";
+
+}
+
+function cierra_diarios() {
+     document.all['diarios'].style.visibility="hidden";
+
+}
+
+function muestra_compus() {
+     document.all['compus'].style.visibility="visible";
+
+}
+
+function cierra_compus() {
+     document.all['compus'].style.visibility="hidden";
+
+}
+function muestra_mails() {
+     document.all['mails'].style.visibility="visible";
+
+}
+
+function cierra_mails() {
+     document.all['mails'].style.visibility="hidden";
+
+}
+function muestra_mexicanas() {
+     document.all['mexicanas'].style.visibility="visible";
+
+}
+
+function cierra_mexicanas() {
+     document.all['mexicanas'].style.visibility="hidden";
+
+}
+
+function muestra_mundo() {
+     document.all['mundo'].style.visibility="visible";
+
+}
+
+function cierra_mundo() {
+     document.all['mundo'].style.visibility="hidden";
+
+}
+function muestra_gobierno() {
+     document.all['gobierno'].style.visibility="visible";
+
+}
+
+function cierra_gobierno() {
+     document.all['gobierno'].style.visibility="hidden";
+
+}
+//-->
+
+</script>
+</head>
+<body bgcolor="#f5f5f5" leftmargin=0 topmargin=0 onLoad="setTimeout('film()',3000)">
+
+
+<div class=cuadro>
+ <BR>
+ <H3 CLASS=header><CENTER>Aquí Te Muestro Mis Sitios Web Favoritos</CENTER></H3>
+
+
+<table BGCOLOR=GREEN CELLSPACING=10 cellpadding=10>
+
+   <tr><td bgcolor=green width=500><img src="botones/bolita.gif">
+   <span onMouseover="muestra_diarios()"  onMouseout="cierra_diarios()" style="font-size:14pt;font-weight:400">
+         <a href="javascript:void('')">Periódicos y Revistas</a></span></td></tr>
+   <tr><td bgcolor=green><img src="botones/bolita.gif">
+   <span onMouseover="muestra_compus()" onMouseout="cierra_compus()" style="font-size:14pt;font-weight:400">
+         <a href="javascript:void('')">Sitios Para Desarrolladores</a></span></td></tr>
+   <tr><td bgcolor=green><img src="botones/bolita.gif">
+   <span onMouseover="muestra_mails()"  onMouseout="cierra_mails()" style="font-size:14pt;font-weight:400">
+         <a href="javascript:void('')">Sitios de Correo Electrónico</a></span></td></tr>
+   <tr><td bgcolor=green><img src="botones/bolita.gif">
+   <span onMouseover="muestra_mexicanas()"     onMouseout="cierra_mexicanas()" style="font-size:14pt;font-weight:400">
+         <a href="javascript:void('')">Universidades Mexicanas</a></span></td></tr>
+   <tr><td bgcolor=green><img src="botones/bolita.gif">
+   <span onMouseover="muestra_mundo()"     onMouseout="cierra_mundo()" style="font-size:14pt;font-weight:400">
+         <a href="javascript:void('')">Universidades del Mundo</a></span></td></tr>
+   <tr><td bgcolor=green><img src="botones/bolita.gif">
+   <span onMouseover="muestra_gobierno()"     onMouseout="cierra_gobierno()" style="font-size:14pt;font-weight:400">
+         <a href="javascript:void('')">Sitios Gubernamentales</a></span></td></tr>
+
+      </table>
+
+
+      <DIV CLASS=diarios ID=diarios onMouseover="muestra_diarios()" onMouseout="cierra_diarios()">
+         <table style="color: white;font-size:9pt" cellspacing=10>
+            <tr><td> <a href="javascript:void('')">La Jornada</a></td><td><a href="http://www.jornada.unam.mx" target=_blank>www.jornada.unam.mx</a></td></tr>
+            <tr><td> <a href="javascript:void('')">Reforma</a></td><td><a href="http://www.reforma.com" target=_blank>www.reforma.com</a></td></tr>
+            <tr><td> <a href="javascript:void('')">El Norte</a></td><td><a href="http://www.elnorte.com" target=_blank>www.elnorte.com</a></td></tr>
+            <tr><td> <a href="javascript:void('')">PC-Magazine</a></td><td><a href="http://www.pcmag.com" target=_blank>www.pcmag.com</a></td></tr>
+            <tr><td> <a href="javascript:void('')"> LAN Times</a></td><td><a href="http://www.lantimes.com" target=_blank>www.lantimes.com</a></td></tr>
+            <tr><td> <a href="javascript:void('')"> BYTE</a></td><td><a href="http://www.byte.com" target=_blank>www.byte.com</a></td></tr>
+            <tr><td> <a href="javascript:void('')"> Scientific American</a></td><td><a href="http://www.sciam.com" target=_blank>www.sciam.com</a></td></tr>
+            <tr><td> <a href="javascript:void('')">The New York Times</a></td><td><a href="http://www.nytimes.com" target=_blank>www.nytimes.com</a></td></tr>
+            <tr><td> <a href="javascript:void('')">The Washington Post</a></td><td><a href="http://www.washingtonpost.com" target=_blank>www.washingtonpost.com</a></td></tr>
+          </table>
+      </DIV>
+
+    <DIV CLASS=compus ID=compus onMouseover="muestra_compus()" onMouseout="cierra_compus()">
+       <table style="color: white;font-size:9pt" cellspacing=10>
+       <tr><td> <a href="javascript:void('')">La Web del Programador</a></td><td><a href="http://www.lawebdelprogramador.com" target=_blank>www.lawebdelprogramador.com</a></td></tr>
+       <tr><td> <a href="javascript:void('')">Softonic</a></td><td><a href="http://www.softonic.com" target=_blank>www.softonic.com</a></td></tr>
+       <tr><td> <a href="javascript:void('')"> Guiasoft</a></td><td><a href="http://www.guiasoft.com" target=_blank>www.guiasoft.com</a></td></tr>
+       <tr><td> <a href="javascript:void('')"> Amazon</a></td><td><a href="http://www.amazon.com" target=_blank>www.amazon.com</a></td></tr>
+      </table>
+     </div>
+
+    <DIV CLASS=mails ID=mails onMouseover="muestra_mails()" onMouseout="cierra_mails()">
+       <table style="color: white;font-size:9pt" cellspacing=10>
+        <tr><td> <a href="javascript:void('')"> Hotmail</a></td><td><a href="http://www.hotmail.com" target=_blank>www.hotmail.com</a></td></tr>
+        <tr><td> <a href="javascript:void('')"> Yahoo</a></td><td><a href="http://www.yahoo.com" target=_blank>www.yahoo.com</a></td></tr>
+        <tr><td> <a href="javascript:void('')"> EsMas</a></td><td><a href="http://www.esmas.com" target=_blank>www.esmas.com</a></td></tr>
+        </table>
+    </DIV>
+
+    <DIV CLASS=mexicanas ID=mexicanas onMouseover="muestra_mexicanas()" onMouseout="cierra_mexicanas()">
+       <table style="color:white;font-size:9pt" cellspacing=10>
+       <tr><td> <a href="javascript:void('')"> Universidades Continente Americano</a></td><td><a href="http://www.unam.mx/udual/universidades/universi.htm#mexico" target=_blank >www.unam.mx/udual/<br>universidades/universi.htm#mexico</a></td></tr>
+       </table>
+    </DIV>
+
+    <DIV CLASS=mundo ID=mundo onMouseover="muestra_mundo()" onMouseout="cierra_mundo()">
+      <table style="color: white;font-size:9pt" cellspacing=10>
+      <tr><td> <a href="javascript:void('')"> Universidades del Mundo</a></td><td><a href="http://www.cui.edu.co/htexst/htm/univ" target=_blank >www.cui.edu.co/htexst/htm/univ</a></td></tr>
+      <tr><td> <a href="javascript:void('')"> Universidades de<br> Estados Unidos</a></td><td><a href="http://www.clas.ufl.edu/CLAS" target=_blank >www.clas.ufl.edu/CLAS</a></td></tr>
+      <tr><td> <a href="javascript:void('')"> Universidades Canadienses</a></td><td><a href="http://www.angelfire.com/ca4/CanadianUniversities" target=_blank >www.angelfire.com/ca4/<br>CanadianUniversities</a></td></tr>
+      <tr><td> <a href="javascript:void('')"> Universidades del<br>Continente Americano</a></td><td><a href="http://www.unam.mx/udual/universidades/universi.htm#mexico" target=_blank >http://www.unam.mx/udual/<br>universidades/universi.htm#mexico</a></td></tr>
+     </table>
+    </DIV>
+  <DIV CLASS=gobierno ID=gobierno onMouseover="muestra_gobierno()" onMouseout="cierra_gobierno()">
+    <table style="color: white;font-size:9pt" cellspacing=10>
+       <tr><td>  <a href="javascript:void('')">Gobierno de Tabasco</a></td><td><a href="http://www.etabasco.gob.mx" target=_blank>www.etabasco.gob.mx</a></td></tr>
+       <tr><td>  <a href="javascript:void('')">Presidencia de la República</a></td><td><a href="http://www.presidencia.gob.mx" target=_blank>http://www.presidencia.gob.mx</a></td></tr>
+       <tr><td>  <a href="javascript:void('')">Sitio del Gobierno Federal</a></td><td><a href="http://www.precisa.gob.mx" target=_blank>www.precisa.gob.mx</a></td></tr>
+       <tr><td>  <a href="javascript:void('')">INEGI</a></td><td><a href="http://www.inegi.gob.mx" target=_blank>www.inegi.gob.mx</a></td></tr>
+   </table>
+  </div>
+
+
+
+   <form style="position:absolute; top:370px; left:640px">
+      <input type="button" style="color:#fffaf0; background-color:#0099CC" value="Volver a Inicio" onClick="parent.presen.location.href='presen.html'" />
+   </form>
+
+ <div ID="pantalla" class=pantalla >
+   <div ID="mostrador" class=mostrador >
+
+  Coloque el ratón sobre<br>
+  el elemento deseado<br>
+  para ver más detalles...<br>&nbsp;<br>&nbsp;<br>
+  Aquí podrá visitar<br>
+  interesantes sitios Web...<br>
+
+  </div>
+  </div></div>
+
+
+</body>
+</html>

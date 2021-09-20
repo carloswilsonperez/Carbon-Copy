@@ -1,0 +1,42 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script>
+            function carga()
+            {
+                var Request = false;
+                
+                if (window.XMLHttpRequest)
+                {
+                    Request = new XMLHttpRequest();
+                }
+                
+                if (Request)
+                {
+                    Request.open("GET", "search.php")
+                    Request.onreadystatechange = function()
+                    {
+                        if (Request.readyState == 4 && Request.status == 200) 
+                        {
+                            document.getElementById("content").innerHTML = Request.responseText;
+                        }
+                    }
+                    Request.send(null);
+                    
+                }
+            }
+        </script>
+        
+    </head>
+    
+    <body onload="carga();">
+        
+        <div id='content'></div>
+    </body>
+</html>

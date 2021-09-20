@@ -1,0 +1,112 @@
+
+ .menu1 {
+        width: 100px;
+	     position: absolute;
+	     top:0px;
+        left: 486px;
+        background-color:#4682B4;
+        visibility: hidden;
+        z-index: 3
+		}
+
+ .menu2 {
+        width: 100px;
+        position: absolute;
+        top:0px;
+        left: 551px;
+        background-color:#4682B4;
+        visibility: hidden;
+        z-index: 4
+		}
+
+ .menu3 {
+        width: 100px;
+        position: absolute;
+        top:0px;
+        left: 616px;
+        background-color:#4682B4;
+        visibility: hidden;
+        z-index: 5
+		}
+
+ .menu4 {
+        width: 100px;
+        position: absolute;
+        top:0px;
+        left: 681px;
+        background-color:#4682B4;
+        visibility: hidden;
+        z-index: 6
+		}
+
+ .menu5 {
+        width: 100px;
+        position: absolute;
+        top:0px;
+        left: 746px;
+        background-color:#4682B4;
+        visibility: hidden;
+        z-index: 7
+		}
+
+ .texto {position: absolute;
+         top: 0px;
+		 left: 0px;
+         color: white;
+         font-size: 10pt;
+         WIDTH: 800px;
+         text-align: justify;
+		 font-family:Verdana, Arial;
+    	font-size: 8pt;
+	    font-weight: 100;
+		z-index: 0;
+		 }
+
+ .citas {
+	width: 200px;
+	font-style: italic;
+	background-color: #FFFAF0;
+}
+
+ .tablatexto {
+	position: relative;
+	left: 31px;
+	color: white;
+	font-family:Verdana, Arial;
+	font-size: 8pt;
+	font-weight: 100;
+
+}
+
+  .tdtexto  {
+	color: white;
+	font-family:Verdana, Arial;
+	font-size: 8pt;
+	font-weight: 100;
+	text-align: justify;
+	text-indent: 15px;
+}
+
+ .bordes  {
+	  border : thick   double #F0F8FF;
+	  padding: 40px;
+}
+
+h3 {
+	font-family:Verdana, Arial;
+
+}
+.cuerpo {
+	position: absolute;
+	top: 0px;
+	left: 217px;
+	width: 795px;
+	height: 557px;
+	overflow:auto;
+	background-color: #4682B4;
+	z-index: 1;
+	color: white;
+	font-size: 10pt;
+	font-family: Verdana, Arial;
+	font-size: 8pt;
+}

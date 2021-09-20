@@ -1,0 +1,195 @@
+/* ESTILOS DE PRESEN.PHP  */
+
+body
+{
+    font-family:"MS Sans Serif";
+    background-color: white;
+    z-index: -1;
+}
+
+         
+.cuadro 
+{
+    position:absolute;
+    left: 0;
+    top: 0;
+    background-color: yellow;
+    color: black;
+    z-index: 1;    
+}
+         
+.cuadro img
+{
+    position:relative;
+    left: 0px;
+}
+
+.titles 
+{
+     font-size: 15pt;
+     font-weight: 700;
+}
+         
+.warn 
+{  
+     position: absolute;
+     left: 220px;
+     top: 100px;
+     background-color: red;
+     border-color: white;
+     border-style: double;
+     border-width:10px;
+     color: white;
+     width: 500px;
+     height: 200px;
+     font-size: 15pt;
+     font-weight: 700;
+}
+
+.chekin 
+{  
+     position:absolute;
+     left: 220px;
+     top: 100px;
+     background-color: red;
+     border-color: white;
+     border-style: double;
+     border-width:10px;
+     color: white;
+     width: 500px;
+     height: 200px;
+     font-size: 15pt;
+     font-weight: 700;
+}
+         
+.chekin2 
+{  
+      position:absolute;
+      left: 220px;
+      top: 100px;
+      background-color: red;
+      border-color: white;
+      border-style: double;
+      border-width:10px;
+      color: white;
+      width: 500px;
+      height: 200px;
+      font-size: 20pt;
+      font-weight: 700;
+}
+
+
+/* ESTILOS DE NAVER.PHP  */
+
+.cuadrobusqueda 
+{
+    position:absolute;
+    left: 150px;
+    top: 30px;
+    border-style: solid;
+    border-color: rgb(163, 73, 164);
+    border-width:5px;
+	border-radius: 16px;
+}
+
+.cuadrobusqueda table
+{
+	color: white;
+	background-color:  rgb(163, 73, 164);
+	vertical-align: middle;
+}
+
+
+.cuadrobusqueda input[type=submit]
+{
+   	position: relative;
+	top: -5px;
+	padding-left: 10px;
+   	padding-right: 10px;
+   	height: 29px;
+   	font-size: 12px;
+   	font-weight: bold;
+   	color: rgb(163, 73, 164);
+   	background-color: yellow;
+   	border: 1px solid;
+   	border-color: gray;
+   	border-radius: 16px;
+   	outline: 0;
+   	box-sizing: content-box;
+
+}
+
+.cuadrobusqueda input[type=submit]:active
+{
+    color: rgb(163, 73, 164);
+    background-color: white;
+    border-color: white;
+}
+
+.cuadrobusqueda input[type=submit]:hover
+{
+    color: rgb(163, 73, 164);
+    background-color: white;
+    border-color: white;
+}
+
+         
+.coloca 
+{
+    position:absolute;
+    left: 620px;
+    top: 350px;
+    font-size: 25pt;
+}
+         
+.logo   
+{
+    position:absolute;
+    left: 850px;
+    top: 0px;
+    font-size: 25pt;
+}      
+         
+input  
+{
+    font-size: 15pt;
+}          
+	 
+	 
+/* ESTILOS DE PROCESA.PHP  */
+
+.write_table
+{
+    width: 900px;
+    color: white;
+    text-align: center;
+    background-color: navy;
+    font-size: 9pt; 
+    border-collapse:collapse;
+}
+
+.write_table td
+{
+    border: 1px solid white;
+    font-size: 12pt;
+    
+}
+
+.write_table tr
+{
+    border: 1px solid white;
+    
+}
+
+.write_table tr:last-child
+{
+    text-align: right;
+    
+}
+
+
+.write_table tr td:nth-child(2)
+{
+    text-align: left;
+}
+

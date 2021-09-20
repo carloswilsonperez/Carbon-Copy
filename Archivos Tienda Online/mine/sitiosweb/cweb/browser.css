@@ -1,0 +1,90 @@
+     .coloca_boton1 {
+                     position: absolute;
+                     top: 52px;
+                     left: 486px;
+					 background-color: black;
+                     z-index: 1 }
+
+       .coloca_boton2 {
+                     position: absolute;
+                     top: 52px;
+                     left: 551px;
+                     z-index: 1 }
+
+       .coloca_boton3 {
+                     position: absolute;
+                     top: 52px;
+                     left: 616px;
+                     z-index: 1 }
+
+       .coloca_boton4 {
+                     position: absolute;
+                     top: 52px;
+                     left: 681px;
+                     z-index: 1  }
+
+       .coloca_boton5 {
+                     position: absolute;
+                     top: 52px;
+                     left: 746px;
+                     z-index: 1 }
+
+      .coloca_boton1f {
+                     position: absolute;
+                     top: 52px;
+                     left: 486px;
+					 background-color: black;
+                     z-index: 2 }
+
+       .coloca_boton2f {
+                     position: absolute;
+                     top: 52px;
+                     left: 551px;
+                     z-index: 2 }
+
+       .coloca_boton3f {
+                     position: absolute;
+                     top: 52px;
+                     left: 616px;
+                     z-index: 2 }
+
+       .coloca_boton4f {
+                     position: absolute;
+                     top: 52px;
+                     left: 681px;
+                     z-index: 2  }
+
+       .coloca_boton5f {
+                     position: absolute;
+                     top: 52px;
+                     left: 746px;
+                     z-index: 2 }
+					 
+       .zonaescape {
+	               position: absolute;
+	               top: 0px;
+	              left: 0px;
+	             width: 2000px;
+	             height: 80px;
+	             background-color:#FFFAF0;
+}
+        .maquina {
+	             position: absolute;
+				 top: 55px;
+				 left:  223px;
+				 
+}
+      .banner {
+	               position: absolute;
+	               top: 0px;
+	               left: 223px;
+	               width: 581px;
+	               height: 50px;
+	              }
+						 
+   .cromo {  visibility: visible;  position: absolute; left: 900px; top: 4px;}
+   .video1 { visibility: hidden;   position: absolute; left: 900px; top: 4px;}
+   .video2 { visibility: hidden;   position: absolute; left: 900px; top: 4px;}
+   .video3 { visibility: hidden;   position: absolute; left: 900px; top: 4px; }
+
+				 

@@ -1,0 +1,22 @@
+H1 {color:white; text-align:center; font-family: verdana, arial; font-size:18pt;}
+H3 {color:white; text-align:center;}
+P {color:white; text-indent:10px; text-align:justify; font-family: verdana, arial;}
+A:link {text-decoration:none}
+A:visited {text-decoration:none}
+A:hover {text-decoration:none; color:yellow;}
+A:active {text-decoration:none;}
+form {text-align:center;}
+.cuerpo {
+	overflow: auto;
+	background-color: #f5f5f5;
+	width: 912px;
+	height: 545px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	padding: 30px;
+	color:white;  text-align:justify; font-family: verdana, arial; font-size: 10pt;
+}
+TABLE {
+	color:white;  text-align:justify; font-family: verdana,arial; font-size: 10pt;
+}

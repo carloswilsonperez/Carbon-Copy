@@ -1,0 +1,124 @@
+<html>
+<head>
+
+<style>
+  div {width: 400px; height: 300px; background-color: black; font-family=Verdana, Arial;
+       font-size:10pt; padding:5px; }
+</style>
+
+<script language="JavaScript" type="text/javascript">
+
+  if (screen.width < 1024) {
+                            location.href="index800.html";
+                           }
+  function info() {
+          document.write("<html><frameset cols='100,*' border=0 frameborder=0>");
+          document.write("<frame name='botones' src='botones.html' scrolling='no' noresize>");
+          document.write("<frameset rows='75,*' frameborder='0' border='0'>");
+          document.write("<frame src='maquina.html' name='maquina' scrolling='no' noresize>");
+          document.write("<frame src='presen.html' name='presen'  noresize>");
+          document.write("</frameset>");
+          document.write("</frameset>");
+          document.write("</HTML>");
+       }
+
+</script>
+</head>
+
+<body  bgcolor='green' onLoad='window.resizeTo(1024,768); window.moveTo(0,0)' scroll='no'>
+
+<DIV style='color:white;
+            position:relative;
+            left:311px; 
+            top:0px;
+            border: thick double #fffaf0'>
+
+<script language='JavaScript' type='text/javascript'>
+
+          var alto, ancho, nombre, sisop, navegador, sialto, siancho, sisisop, sinombre, sinavegador;
+          alto = screen.height;            sialto="no";
+          ancho = screen.width;            siancho="no";
+          sisop = navigator.platform;      sisisop="no";
+          nombre = navigator.appName;      sinombre="no";
+          navegador = navigator.userAgent; sinavegador="no";
+          
+          document.write("<h3><center><FONT COLOR='#FF9900'>El Sitio Web de Carlos Wilson</FONT></center></h3>");
+          document.write("<img src='imagenes/mundo.gif' width=100 height=100  style='position:relative; left:135px'>");
+          document.write("<br>Este Sitio se verá mejor");
+          document.write("usando el Navegador Microsoft Internet Explorer versión 5.5 o posterior, con un monitor con una resolución de 1024 x 768 píxeles.<br>");
+          document.write("<br>La Tabla siguiente le indicará si su Computadora reúne los requisitos anteriores:<p>");
+          document.write ("<center><table style='color: white' bgcolor='#666666'>");
+          document.write ("<tr>");
+          document.write ("<td>");
+          document.write("Sistema Operativo </td>");
+          document.write ("<td width=50 align=center>");
+
+          if ( sisop=="Win32" ) { document.write("Sí");
+                                  sisisop="si";
+                                   }
+                          else { document.write("<font color=red>No</font>");
+                                   }
+          document.write ("</td>");
+          document.write ("</tr>");
+          document.write ("<tr><td>");
+          document.write("Navegador</td>");
+          document.write ("<td width=50 align=center>");
+          if ( nombre=="Microsoft Internet Explorer" ) { document.write("Sí");
+                                                         sinombre="si";
+                                    }
+                                                  else { document.write("<font color=red>No</font>");
+                                                  }
+          document.write ("</td>");
+          document.write ("</tr>");
+
+          if ( sinombre=="si" )   {  /* ----Lo siguiente aparece si el navegador es IE ---- */
+
+          document.write ("<tr>");
+          document.write ("<td>");
+          document.write("Versión de Navegador</td>");
+          document.write ("<td width=50 align=center>");
+          var mayor=0;
+
+          for (var i=0; i<=70; i++) {
+             if ( navegador.substring(i,i+4)=="MSIE" ) { mayor=navegador.substring(i+5,i+8);                                                                 }
+                                    }
+
+          if ( mayor >= 5.5 ) { document.write("Sí");
+                                sinavegador="si";
+                              }
+                    else      { document.write("<font color=red>No</font>");
+                              }
+
+          document.write ("</td>");
+          document.write ("</tr>");
+                                    }    /* ----Fin de Condicion---- */
+          document.write ("<tr>");
+          document.write("<td>");
+          document.write ("Resolución de Monitor");
+          document.write ("</td>");
+          document.write ("<td width=50 align=center>");
+          if ( ancho==1024 && alto==768 ) {
+                                           document.write("Sí");
+                                            sialto="si";
+                                           }
+                                  else    {
+                                           document.write("<font color=red>No</font>");
+                                          }
+          document.write ("</td></tr></table></center>");
+
+          if ( sialto=="si" && sisisop=="si" && sinombre=="si" && sinavegador=="si" )  {
+                  document.write ("<p>Su Computadora Cumple Los Requerimientos.<br>");
+                  document.write ("Este Sitio Lo Mostrará Perfectamente Su Navegador.");
+                   }
+          else  { document.write ("<p>Su Computadora No Reúne Los Requerimientos.<br>");
+                  document.write ("Su Navegador Tal Vez No Muestre Correctamente Este Sitio.");
+                   }
+
+          document.write ("<form style='position: relative; left: 170px'>");
+          document.write ("<input type=button name=pica id=pica value='Entrar' onClick='info()' style='color:#fffaf0; background-color:#0099CC'>");
+          document.write ("</form>");
+
+</script>
+</div>
+</body>
+</html>

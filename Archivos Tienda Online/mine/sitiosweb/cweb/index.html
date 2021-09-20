@@ -1,0 +1,128 @@
+<html>
+<head>
+<style>
+  div {width:400px; height:300px; background-color:navy; font-family=Verdana,Arial;font-size:10pt; padding:5px;   }
+
+</style>
+
+<script language="JavaScript" type="text/javascript">
+
+var banner, nr, total;
+banner = new Array("botones/b0.jpg","botones/b1.jpg","botones/b2.jpg","botones/b3.jpg","botones/b4.jpg","botones/b5.jpg","botones/b6.jpg","botones/b7.jpg","botones/b8.jpg","botones/b9.jpg","botones/b10.jpg","botones/b11.jpg","botones/b12.jpg","botones/b13.jpg","botones/b14.jpg");
+
+nr=0;
+total=banner.length;
+function bann () {
+                    var largo=1500;
+                    if ( nr==total ) {  nr=0; }
+                    document.images['anuncio'].src=banner[nr];
+                    if ( nr>0 ) {  largo=100; }
+                    nr++;
+                    setTimeout("bann()",largo);
+                  }
+
+
+  function info() {
+          document.write("<html><frameset rows='80,*' border=0 frameborder=0>");
+          document.write("<frame name='uno' src='navegador.html' scrolling='no' noresize>");
+          document.write("<frame name='dos' src='presen.html' scrolling='no' noresize>");
+          document.write("</frameset></html>");
+       }
+
+</script>
+</head>
+
+<body onLoad="window.resizeTo(1024,768); window.moveTo(50,50); bann()" scroll=no bgcolor="#FFFAF0">
+
+<img src="botones/b0.jpg" id=anuncio name=anuncio style="position:relative; left:80px">
+
+
+
+<DIV style="color:white; position:relative; left:180px; top:0px; border:thick double navy">
+
+<script language="JavaScript" type="text/javascript"><!--
+
+          var alto, ancho, nombre, sisop, navegador, sialto, siancho, sisisop, sinombre, sinavegador;
+          alto = screen.height;            sialto="no";
+          ancho = screen.width;            siancho="no";
+          sisop = navigator.platform;      sisisop="no";
+          nombre = navigator.appName;      sinombre="no";
+          navegador = navigator.userAgent; sinavegador="no";
+
+          document.write("<h3><center><FONT COLOR='#FF9900'>!Bienvenido a CárdenasWeb.com!</FONT></center></h3>");
+          document.write("<SPAN STYLE='color: white; background-color: #0099CC'>CardenasWeb.com </SPAN>ha sido especialmente diseñado<br>");
+          document.write("para ser visto usando el Navegador Microsoft Internet Explorer para Windows versión 5.5 o posterior, usando un monitor a Color con una resolución de 1024 x 768 px<br>");
+          document.write("La Tabla siguiente le indicará si su Computadora reúne los requisitos anteriores:<p>");
+          document.write ("<center><table style='color: white'>");
+          document.write ("<tr>");
+          document.write ("<td>");
+          document.write("Sistema Operativo </td>");
+          document.write ("<td width=50 align=center>");
+
+          if ( sisop=="Win32" ) { document.write("Sí");
+                                  sisisop="si";
+                                   }
+                          else { document.write("<font color=red>No</font>");
+                                   }
+          document.write ("</td>");
+          document.write ("</tr>");
+          document.write ("<tr><td>");
+          document.write("Navegador</td>");
+          document.write ("<td width=50 align=center>");
+          if ( nombre=="Microsoft Internet Explorer" ) { document.write("Sí");
+                                                         sinombre="si";
+                                    }
+                                                  else { document.write("<font color=red>No</font>");
+                                                  }
+          document.write ("</td>");
+          document.write ("</tr>");
+
+          if ( sinombre=="si" )   {  /* ----Lo siguiente aparece si el navegador es IE ---- */
+
+          document.write ("<tr>");
+          document.write ("<td>");
+          document.write("Versión de Navegador</td>");
+          document.write ("<td width=50 align=center>");
+          var mayor=0;
+
+          for (var i=0; i<=70; i++) {
+             if ( navegador.substring(i,i+4)=="MSIE" ) { mayor=navegador.substring(i+5,i+8);                                                                 }
+                                    }
+
+          if ( mayor >= 5.5 ) { document.write("Sí");
+                                sinavegador="si";
+                              }
+                    else      { document.write("<font color=red>No</font>");
+                              }
+
+          document.write ("</td>");
+          document.write ("</tr>");
+                                    }    /* ----Fin de Condicion---- */
+          document.write ("<tr>");
+          document.write("<td>");
+          document.write ("Resolución de Monitor");
+          document.write ("</td>");
+          document.write ("<td width=50 align=center>");
+          if ( ancho==1024 && alto==768 ) { document.write("Sí");
+                                           sialto="si";
+                                          }
+                                        else { document.write("<font color=red>No</font>");
+                                        }
+          document.write ("</td></tr></table></center>");
+
+          if ( sialto=="si" && sisisop=="si" && sinombre=="si" && sinavegador=="si" )  {
+                  document.write ("<p>Su Computadora Cumple Los Requerimientos.<br>");
+                  document.write ("Este Sitio Lo Mostrará Perfectamente Su Navegador.");
+                   }
+          else  { document.write ("<p>Su Computadora No Reúne Los Requerimientos.<br>");
+                  document.write ("Su Navegador Tal Vez No Muestre Correctamente Este Sitio.");
+                   }
+
+          document.write ("<form style='position: relative; left: 150px'>");
+          document.write ("<input type=button name=pica id=pica value='Entrar' onClick='info()'>");
+          document.write ("</form>");
+
+//--></script>
+</div>
+</body>
+</html>

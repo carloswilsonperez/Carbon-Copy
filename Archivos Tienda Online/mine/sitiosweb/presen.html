@@ -1,0 +1,107 @@
+<html>
+<head>
+
+
+<script language="javascript" type="text/javascript">
+<!--
+
+   function grande() {
+                      document.all['grande'].style.visibility="visible";
+                     }
+
+   function peque() {
+                      document.all['grande'].style.visibility="hidden";
+                        }
+
+
+
+//--></script>
+
+<style>
+
+   .chico {position: absolute; top: 60px; left: 15px;  visibility: visible}
+   .grande {position: absolute; top: 60px; left: 15px;  visibility: hidden}
+   H3 { font-family:Verdana,Arial; text-align: left }
+   .cuadro {position:absolute;
+            left: 10px;
+            top: 30px;
+            COLOR: WHITE;
+            background-color: #0099CC;
+            border-color: black;
+            border-style: double;
+            border-width:5x;
+           
+}
+   .diplomados {
+            position: absolute;
+            left:289px;
+            top:328px;
+            background-color:black;
+            color:white;
+            font-family:verdana,arial;
+            font-size: 9pt;
+            padding: 5px;
+            }
+    
+      TD {   COLOR: WHITE;
+             text-align:justify;
+             font-family: Verdana,Arial;
+             font-size: 10pt;
+             text-indent: 10px;
+            
+ }
+
+</style></head>
+
+<body leftmargin=0 topmargin=0>
+
+
+<div class=cuadro>
+      <BR>
+      <H3><CENTER>Está Ud. Viendo Mi Sitio Web Personal...</CENTER></H3>
+ 
+      <table BGCOLOR=GREEN CELLSPACING=10>
+      <tr><td WIDTH=250 height=370>
+
+         <DIV CLASS="chico" ID="chico">
+           <img src="botones/cw1.jpg"  width=217 height=249 align=left onMouseover="grande()">
+         </DIV>
+
+         <DIV CLASS="grande" ID="grande">
+           <IMG SRC="botones/cw2.jpg"  width=217 height=249 align=left onMouseout="peque()">
+         </DIV>
+      </td>
+      <td width=433 VALIGN=TOP>
+         En este sitio le muestro mis datos personales, mi currículum y otros elementos de interés laboral
+         ...<p>
+        Mi perfil es el de <span style="font-weight:900">programador de nivel avanzado</span> en ciertos lenguajes de computación; asimismo, soy
+        un usuario avanzado del programa <span style="font-weight:900">AutoCAD 2002</span>. Si desea ver detalles sobre mi
+        formación, haga click en el botón <span style="background-color: #CC3300; color:white">Currículum</span> a la izquierda de la pantalla. Si desea ver con más detalle
+        cuáles son mis habilidades concretas en computación, haga click en el botón <span style="background-color: #00FF66; color:black">Habilidades</span> a la izquierda
+        de la pantalla.
+      </td></tr>
+      </table>
+</div>
+
+
+
+<DIV CLASS=diplomados ID=diplomados>
+      <B>He completado los siguientes Diplomados:</B>
+      <br>
+      <table>
+         <tr><td>
+         <img src="botones/estrella_animada.gif" WIDTH=50 HEIGHT=50>
+         </td>
+         <td STYLE="color:white; background-color:#0099CC; font-weight:400">Diplomado en AutoCAD2002 --&gt;<a href="curriculum.html" target="presen"><font color=yellow>Ver Detalles</font></A>
+         </td></tr>
+         <tr><td>
+         <img src="botones/estrella_animada.gif" WIDTH=50 HEIGHT=50>
+         </td>
+         <td STYLE="color:white; background-color:#0099CC;font-weight:400">Diplomado en Redes de Computadoras --&gt;<A href="curriculum.html" target="presen"><font color=yellow>Ver Detalles</font></A>
+         </td></tr>
+     </table>
+</DIV>
+  
+
+</body>
+</html>

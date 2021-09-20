@@ -1,0 +1,108 @@
+<html>
+
+<head>
+<title>Barra de Botones de Navegaci�n</title>
+<script language="javascript" type="text/javascript">
+<!--
+   
+
+   var texto="Me da Mucho Gusto que me Visites!!      Mis mails: cwilson1974@hotmail.com     cwilson1974@yahoo.com.mx";
+   var visualizacion="inicio";
+   function mueve() {
+                      if (visualizacion=="inicio") {  for (var i=1; i<=140; i++)
+                                                          { texto=" "+texto; }
+                                                       visualizacion=texto;
+                                                   }
+                      visualizacion=visualizacion.substring(1,visualizacion.length);
+                      window.status=visualizacion;
+                      if (visualizacion=="") { visualizacion=texto; }
+                      setTimeout ("mueve()",60);
+                     }
+
+  function tiempo() {
+    var tiempo, hora, min, seg, horario;
+    tiempo = new Date();
+    hora = tiempo.getHours();  if (hora>12) {hora=hora - 12;
+                                             document.form2.boton2.value="PM"; }
+
+                                   else     {document.form2.boton2.value="AM"; }
+    if (hora<10) {hora="0" + hora; }
+    min = tiempo.getMinutes(); if (min<10) {min="0" + min; }
+    seg = tiempo.getSeconds(); if (seg<10) {seg="0" + seg; }
+    horario=hora + ":" + min + ":" + seg;
+    document.form1.boton.value=horario;
+    setTimeout ("tiempo()",1000);
+  }
+
+
+//-->
+</script>
+
+<style type="text/css">
+<!--
+     
+     
+     .reloj {position: absolute; top: 455px; left: 15px}
+     .merid {position: absolute; top: 480px; left: 35px}
+     
+     body { background-color:#0099CC}
+ -->
+</style>
+
+</head>
+
+<body onLoad="mueve();tiempo()" leftmargin=0 topmargin=0>
+
+
+<table>
+    <tr>
+        <td bgcolor="green">
+           Artículos 
+        </td>
+    </tr>
+    <tr>
+        <td>
+           Agregar Artículos 
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Listar Artículos
+        </td>
+    </tr>
+       
+</table>
+
+<table>
+    <tr>
+        <td bgcolor="green">
+           Reportes 
+        </td>
+    </tr>
+    <tr>
+        <td>
+           Ventas del Día 
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Ventas por Periodo
+        </td>
+    </tr>
+       
+</table>
+
+
+
+
+<DIV CLASS=reloj>
+<form name="form1" id="form1">
+   <input type="button" name="boton" id="boton" value="- Hora -"  style="color:#fffaf0; background-color:#0099CC" />
+</form></DIV>
+<DIV CLASS=merid>
+<form name="form2" id="form2">
+   <input type="button" name="boton2" id="boton2" value="- AM -"  style="color:#fffaf0; background-color:#0099CC" />
+</form></DIV>
+
+</body>
+</html>

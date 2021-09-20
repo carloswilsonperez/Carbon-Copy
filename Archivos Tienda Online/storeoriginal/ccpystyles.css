@@ -1,0 +1,1222 @@
+@font-face 
+{
+    font-family: roboto;
+    src: url(Roboto-Regular.ttf);
+}
+
+@font-face 
+{
+    font-family: carbontype;
+    src: url(carbontype.ttf);
+}
+
+body
+{
+    font-family: roboto;
+    color: gray;
+    background-color: white;
+}
+
+.fondo_presen
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 430px;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    z-index: -10;
+}
+
+
+.fondo
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1400px;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    z-index: -10;
+}
+
+#mensaje
+{
+    font-size: 50px;
+}
+
+#mensajecarbon
+{
+    font-family: carbontype;
+    color: rgb(163, 73, 164);
+}
+
+.banner_presen
+{
+    position: absolute;
+    top: 430px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(163, 73, 164);
+}
+
+.fondo_categories
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 700px;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    z-index: -10;
+}
+
+.banner_categories
+{
+    position: absolute;
+    top: 700px;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background-color: #7D0552;
+}
+
+/* Estilos del archivo BOTONES.PHP  */
+
+.menu
+{
+    position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 280px;
+	background-color: white;
+    margin: 0px;
+    padding: 10px;
+    z-index: 1;
+}
+
+.menu td
+{
+   font-size: 12px;
+   border-bottom: 1px solid gray;
+   background-color: white;
+
+}
+
+.menu td:hover
+{
+   background-color: rgb(163, 73, 164);
+}
+
+.menu td a
+{
+   text-decoration: none;
+   color: gray;
+}
+
+.menu td:hover a
+{
+   background-color: rgb(163, 73, 164);
+   color: white;
+}
+
+.menu a:link a:visited a:active
+{
+    text-decoration:none;
+    color: gray;
+}
+
+#browrec
+{
+    position: relative;
+    top: 400px;
+    left: 20px;
+    color: gray;
+    font-size: 10px;
+    background-color: #ffffff;
+    z-index: 10;
+}
+
+
+
+/* Estilos del archivo CATALOGO.PHP  *******************************************************************/
+
+#pageindexs
+{
+    position: fixed;
+    width:750px;
+    height: 32px;
+    left: 0;
+    top: 0;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    z-index: 15;
+}
+
+#pageindexs #thispage
+{
+    background-color: gray; 
+    vertical-align: middle;
+    text-align: center;
+}
+
+#pageindexs #thispage a
+{
+    color: white;  
+    text-decoration: none;
+}
+
+#pageindexs #thispage a:hover
+{
+    color: white;
+    font-weight: bold;
+}
+
+#pageindexs #thisnotpage
+{
+    background-color: white; 
+    vertical-align: middle;
+    text-align: center;
+}
+
+#pageindexs #thisnotpage a
+{
+    color: gray;  
+    text-decoration: none;
+}
+
+#pageindexs #thisnotpage a:hover
+{
+    color: gray;
+    font-weight: bold;
+}
+
+
+.subcategorias
+{
+    position: relative;
+    left: 200px;
+    top: 0;
+    width: 30%;
+    background-color: white;
+    border: 5px solid #B6B6B4;
+    border-radius: 30px;
+    padding: 20px;
+    z-index: 2;
+}
+
+.subcategorias img
+{
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+.subs td a
+{
+    text-decoration: none;
+    color: gray;
+    font-size: 15px;
+}
+
+.subs tr:hover
+{
+    color: rgb(163, 73, 164);
+}
+
+.subs tr:hover a
+{
+    color: rgb(163, 73, 164);
+}
+
+#mostrador
+{
+    position: relative;
+    left: 0;
+    top: 20px;
+    width:640px;
+}
+
+#individual
+{
+    background-color: #ffffff;
+    font-size: 15px;
+    color:black;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+#individual tr:nth-child(6)
+{
+    font-weight: bold;
+    color: rgb(163, 73, 164);
+}
+
+/* Estilos del archivo LOGIN.PHP  **************************************************************************/
+
+.unregistered
+{
+    position: relative;
+    top: 0;
+    left: 185px;
+    margin: 20px;
+    font-size: 14px;
+}
+
+.unregistered a
+{
+    color: rgb(163, 73, 164);
+    text-decoration: none;
+}
+
+.container
+{
+    margin: 10px;
+    width: 600px;
+}
+
+.login {
+   position: relative;
+   top: 0;
+   left: 0;
+   margin: 0 auto;
+   padding: 20px 20px 20px;
+   width: 310px;
+   background: white;
+   border-radius: 3px;
+   -webkit-box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
+   box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.login:before
+{
+   content: '';
+   position: absolute;
+   top: -8px;
+   right: -8px;
+   bottom: -8px;
+   left: -8px;
+   z-index: -1;
+   background: rgba(0, 0, 0, 0.08);
+   border-radius: 4px;
+}
+
+.login h1
+{
+   margin: -20px -20px 21px;
+   line-height: 40px;
+   font-size: 15px;
+   font-weight: bold;
+   color: #555;
+   text-align: center;
+   text-shadow: 0 1px white;
+   background: #f3f3f3;
+   border-bottom: 1px solid #cfcfcf;
+   border-radius: 3px 3px 0 0;
+   background-image: -webkit-linear-gradient(top, whiteffd, #eef2f5);
+   background-image: -moz-linear-gradient(top, whiteffd, #eef2f5);
+   background-image: -o-linear-gradient(top, whiteffd, #eef2f5);
+   background-image: linear-gradient(to bottom, whiteffd, #eef2f5);
+   -webkit-box-shadow: 0 1px whitesmoke;
+   box-shadow: 0 1px whitesmoke;
+}
+
+.login p
+{
+   margin: 20px 0 0;
+}
+
+.login p:first-child
+{
+   margin-top: 0;
+}
+
+.login input[type=text], .login input[type=password], .login input[type=email]
+{
+   width: 278px;
+}
+
+.login p.remember_me
+{
+   float: left;
+   line-height: 31px;
+}
+
+.login p.remember_me label
+{
+   font-size: 10px;
+   color: gray;
+   cursor: pointer;
+}
+
+.login p.remember_me input
+{
+   position: relative;
+   bottom: 1px;
+   margin-right: 4px;
+   vertical-align: middle;
+}
+
+.login p.submit
+{
+   text-align: right;
+}
+
+.login-help
+{
+   position: relative;
+   top: 0;
+   left: 5px;
+   margin: 20px 0;
+   font-size: 11px;
+   color: gray;
+   text-align: center;
+}
+
+.login-help a
+{
+   color: rgb(163, 73, 164);
+   text-decoration: none;
+}
+
+.login-help a:hover
+{
+   text-decoration: none;
+}
+
+.login input
+{
+
+   font-size: 14px;
+}
+
+.login input[type=text], input[type=password], input[type=email], input[type=tel] {
+   margin: 5px;
+   padding: 0 10px;
+   width: 200px;
+   height: 20px;
+   color: #404040;
+   background: white;
+   border: 1px solid;
+   border-color: #c4c4c4 #d1d1d1 #d4d4d4;
+   border-radius: 2px;
+   outline: 5px solid #eff4f7;
+   -moz-outline-radius: 3px;
+   -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);
+   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.login input[type=password]:focus, input[type=email]:focus
+{
+   height: 20px;
+   border-color: #7dc9e2;
+   outline-color: #dceefc;
+   outline-offset: 0;
+}
+
+.login input[type=submit]
+{
+   padding-left: 10px;
+   padding-right: 10px;
+   height: 29px;
+   font-size: 12px;
+   font-weight: bold;
+   color: white;
+   background-color: gray;
+   border: 1px solid;
+   border-color: gray;
+   border-radius: 16px;
+   outline: 0;
+   box-sizing: content-box;
+
+}
+
+.login input[type=submit]:active
+  {
+    color: white;
+    background-color: rgb(163, 73, 164);
+    border-color: rgb(163, 73, 164);
+  }
+
+.login input[type=submit]:hover
+{
+    color: white;
+    background-color: rgb(163, 73, 164);
+    border-color: rgb(163, 73, 164);
+}
+
+.login .lt-ie9 input[type=text], .lt-ie9 input[type=password], .lt-ie9 input[type=email], .lt-ie9 input[type=tel]
+{
+   line-height: 34px;
+}
+
+/* Estilos del archivo REGISTER.PHP  *********************************************************************/
+
+#asterisk1
+{
+    color: red;
+}
+
+#asterisk2
+{
+    color: red;
+}
+
+#asterisk3
+{
+    color: red;
+}
+
+#asterisk4
+{
+    color: red;
+}
+
+#asterisk5
+{
+    color: red;
+}
+
+#asterisk6
+{
+    color: red;
+}
+
+#asterisk7
+{
+    color: red;
+}
+
+#asterisk8
+{
+    color: red;
+}
+
+#asterisk9
+{
+    color: red;
+}
+
+#asterisk10
+{
+    color: red;
+}
+
+#asterisk11
+{
+    color: red;
+}
+
+#message1
+{
+   visibility: visible;
+   position: absolute;
+   top: 40px;
+   left: 400px;
+   width: 60px;
+   height: 60px;
+   background-color: red;
+}
+
+#message2
+{
+   visibility: visible;
+   position: absolute;
+   top: 70px;
+   left: 400px;
+   width: 60px;
+   height: 60px;
+   background-color: green;
+}
+
+#message3
+{
+   visibility: visible;
+   position: absolute;
+   top: 140px;
+   left: 400px;
+   width: 60px;
+   height: 60px;
+   background-color: navy;
+}
+
+#message4
+{
+   visibility: visible;
+   position: absolute;
+   top: 170px;
+   left: 400px;
+   width: 60px;
+   height: 60px;
+   background-color: green;
+}
+
+#message5
+{
+   visibility: visible;
+   position: absolute;
+   top: 200px;
+   left: 400px;
+   width: 60px;
+   height: 60px;
+   background-color: blue;
+}
+
+.errors_found
+{
+   font-size: 10px;
+   color: gray;
+
+}
+
+.register {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    padding: 20px 20px 20px;
+    width: 310px;
+    background: white;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.register:before
+{
+    content: '';
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    bottom: -8px;
+    left: -8px;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+}
+
+.register h1
+{
+    margin: -20px -20px 21px;
+    line-height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #555;
+    text-align: center;
+    text-shadow: 0 1px white;
+    background: #f3f3f3;
+    border-bottom: 1px solid #cfcfcf;
+    border-radius: 3px 3px 0 0;
+    background-image: -webkit-linear-gradient(top, whiteffd, #eef2f5);
+    background-image: -moz-linear-gradient(top, whiteffd, #eef2f5);
+    background-image: -o-linear-gradient(top, whiteffd, #eef2f5);
+    background-image: linear-gradient(to bottom, whiteffd, #eef2f5);
+    -webkit-box-shadow: 0 1px whitesmoke;
+    box-shadow: 0 1px whitesmoke;
+}
+
+.register p
+{
+    margin: 10px 0 0;
+}
+
+.register p:first-child
+{
+    margin-top: 0;
+}
+
+.register p.notify_me
+{
+    float: left;
+    line-height: 31px;
+}
+
+.register p.notify_me label
+{
+    font-size: 10px;
+    color: gray;
+    cursor: pointer;
+}
+
+.register p.notify_me input
+{
+    position: relative;
+    bottom: 1px;
+    margin-right: 4px;
+    vertical-align: middle;
+}
+
+.register p.submit
+{
+    text-align: center;
+}
+
+.register input[type=text], input[type=password], input[type=email], input[type=tel]
+{
+    font-size: 14px;
+    margin: 2px;
+    padding: 0 10px;
+    width: 250px;
+    height: 20px;
+    color: #404040;
+    background: white;
+    border: 1px solid;
+    border-color: #c4c4c4 #d1d1d1 #d4d4d4;
+    border-radius: 2px;
+    outline: 5px solid #eff4f7;
+    -moz-outline-radius: 3px;
+    -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+
+.register input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=tel]:focus
+{
+    border-color: #7dc9e2;
+    outline-color: #dceefc;
+    outline-offset: 0;
+}
+
+.register input[type=submit]
+{
+    padding-left: 12px;
+    padding-right: 12px;
+    height: 29px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: gray;
+    border: 1px solid;
+    border-radius: 16px;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+.register input[type=submit]:active
+{
+    color: white;
+    background-color: rgb(163, 73, 164);
+    border-color: rgb(163, 73, 164);
+}
+
+.register input[type=submit]:hover
+{
+    color: white;
+    background-color: rgb(163, 73, 164);
+    border-color: rgb(163, 73, 164);
+}
+
+
+.register .lt-ie9 input[type=text], .lt-ie9 input[type=password], .lt-ie9 input[type=email], .lt-ie9 input[type=tel]
+{
+    line-height: 34px;
+}
+
+/* Estilos del archivo MAQUINA.PHP  ********************************************************************/
+
+.welcome
+{
+    position:absolute;
+    top: 70px;
+    left: 75%;
+    font-size: 10pt;
+    color: gray;
+    font-weight:400;
+    z-index: 1;
+}
+
+.welcome > span
+{
+    color:rgb(163, 73, 164);
+}
+
+.welcome > a
+{
+    color: gray;
+    text-decoration: none;
+}
+.ayudatel
+{
+    position:absolute;
+    top: 60px;
+    left: 400px;
+    font-size: 10pt;
+    color:gray;
+    font-weight:400;
+    z-index: 1;
+}
+
+.carrito
+{
+    position:absolute;
+    top: 10px;
+    left: 740px;
+    width: 240px;
+    height: 120px;
+    background-color: white;
+    z-index: 1;
+}
+
+.carrito table
+{
+    color: rgb(163, 73, 164);
+    font-size: 15px;
+    font-weight:600;
+}
+
+.carrito table tr:nth-child(2)
+{
+    color: gray;
+    font-size: 15px;
+    font-weight:500;
+}
+
+.carrito td
+{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.topmenu
+{
+    position:absolute;
+    top: 11px;
+    left: 5px;
+    width: 320px;
+    z-index: 1;
+    background-color: white;
+}
+
+.topmenu a
+{
+    text-decoration: none;
+    color: gray;
+}
+
+.topmenu a:hover
+{
+    text-decoration: none;
+    color: rgb(163, 73, 164);
+}
+
+.topmenu td
+{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 12px;
+    text-align: center;
+    vertical-align: middle;
+    border-right: 1px solid black;
+    text-align: center;
+}
+
+.toplogo
+{
+    position:absolute;
+    top: 45px;
+    left: 5px;
+    z-index: 1;
+}
+
+.form-wrapper
+{
+    position: absolute;
+    left: 300px;
+    top: 12px;
+    z-index: 1;
+}
+
+#search
+{
+    position: relative;
+    left: 50px;
+    top: -2px;
+    width: 360px;
+    height: 14px;
+    padding: 10px 5px;
+    float: left;
+    color: gray;
+    font-size: 12px;;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+    z-index: 1
+}
+
+.form-wrapper #search:focus
+{
+    border-color: #7dc9e2;
+    outline-color: #dceefc;
+    outline-offset: 0;
+}
+
+.form-wrapper #search:active
+{
+    border-color: #7dc9e2;
+    outline-color: #dceefc;
+    outline-offset: 0;
+}
+
+.form-wrapper #submit
+{
+    position: absolute;
+    left: 345px;
+    top: -3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 39px;
+    width: 80px;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    background-color: gray;
+    border: 1px solid;
+    border-color: #b4ccce #b3c0c8 #9eb9c2;
+    border-radius: 4px;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.form-wrapper #submit:hover
+{
+    color: white;
+    background-color: rgb(163, 73, 164);
+}
+
+.form-wrapper #submit:active
+{
+   background-color: rgb(163, 73, 164);
+}
+
+
+
+/* ESTILOS DEL ARCHIVO VIEWCART.PHP  **********************************************************************/
+
+.emptycart
+{
+    position: absolute;
+    top: 20px;
+    left: 120px;
+    border: 5px solid gray;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.emptycart > table
+{
+    font-size: 20px;
+    color: gray;
+    text-align: center;
+}
+
+.no_emptycart
+{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    padding: 10px;;
+    font-size: 20px;
+    color: gray;
+}
+
+#cart_table
+{
+    border: 1px solid #e3e3e3;
+    background-color: red;
+    width: 100%;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+}
+
+#cart_table td, #cart_table th
+{
+    padding: 5px;
+    color: green;
+}
+
+#cart_table thead
+{
+
+    padding: .2em 0 .2em .5em;
+    text-align: left;
+    color: #4B4B4B;
+    background-color: green;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#e3e3e3), color-stop(.6,#B3B3B3));
+    background-image: -moz-linear-gradient(top, #D6D6D6, #B0B0B0, #B3B3B3 90%);
+    border-bottom: solid 1px #999;
+}
+
+#cart_table th
+{
+    font-size: 17px;
+    line-height: 20px;
+    font-style: normal;
+    font-weight: normal;
+    text-align: left;
+    text-shadow: white 1px 1px 1px;
+}
+
+#cart_table td
+{
+    line-height: 20px;
+
+    font-size: 14px;
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+}
+
+#cart_table td:hover
+{
+    background-color: #fff;
+}
+
+#cart_table
+{
+    border: 1px solid #e3e3e3;
+    background-color: #f2f2f2;
+    width: 100%;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+}
+
+#cart_table td, #cart_table th
+{
+    padding: 5px;
+    color: #333;
+}
+
+#cart_table thead {
+
+    padding: .2em 0 .2em .5em;
+    text-align: left;
+    color: #4B4B4B;
+    background-color: #C8C8C8;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#e3e3e3), color-stop(.6,#B3B3B3));
+    background-image: -moz-linear-gradient(top, #D6D6D6, #B0B0B0, #B3B3B3 90%);
+    border-bottom: solid 1px #999;
+}
+
+#cart_table th {
+
+    font-size: 17px;
+    line-height: 20px;
+    font-style: normal;
+    font-weight: normal;
+    text-align: left;
+    text-shadow: white 1px 1px 1px;
+}
+#cart_table td {
+    line-height: 20px;
+
+    font-size: 14px;
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+}
+
+#cart_table td:hover
+{
+    background-color: #fff;
+}
+
+#follow
+{
+    position: relative;
+    top: 10px;
+    left: 50px;
+    width: 200px;
+}
+
+
+/* ESTILOS DEL ARCHIVO CONFIRMATION.PHP  **********************************************************************/
+
+#confirmed
+{
+    position: relative;
+    left: 33%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#must_be_activated
+{
+    position: relative;
+    left: 10%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+
+
+/* ESTILOS DEL ARCHIVO CONTACTO.PHP  **********************************************************************/
+
+
+#contacto
+{
+   position: relative;
+   left: 50px;
+   width: 70%;
+}
+
+#contacto p:first-child
+{
+    position: relative;
+    left: 26%;
+    font-weight: bold;
+}
+
+#contacto p:nth-child(even)
+{
+    
+    font-weight: bold;
+}
+
+#contacto p:nth-child(odd)
+{
+    
+    font-weight: bold;
+}
+
+#contacto table
+{
+    position: relative;
+    left: 140px;
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+
+#contacto table tr
+{
+    padding: 0;
+    margin: 0;
+    height: 60px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+#contacto td:nth-child(2)
+{
+    color: rgb(163, 73, 164);
+}
+
+#contactform input[type=submit]
+{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+iframe
+{
+    position: relative;
+    left: 120px;
+}
+
+textarea
+{
+    font-size: 14px;
+    margin: 2px;
+    padding: 0 10px;
+    width: 250px;
+    height: 200px;
+    color: #404040;
+    background: white;
+    border: 1px solid;
+    border-color: #c4c4c4 #d1d1d1 #d4d4d4;
+    border-radius: 2px;
+    outline: 5px solid #eff4f7;
+    -moz-outline-radius: 3px;
+    -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+
+textarea:focus
+{
+    border-color: #7dc9e2;
+    outline-color: #dceefc;
+    outline-offset: 0;
+}
+
+/* ESTILOS DEL ARCHIVO CONFIRMATION.PHP  **********************************************************************/
+
+
+
+
+/* ESTILOS DEL ARCHIVO COLOCA_PEDIDO.PHP  **********************************************************************/
+
+
+#checkout
+{
+    position: relative;
+    left: 0;
+}
+
+#checkout table
+{
+    position: relative;
+    left: 100px;
+    width: 50%;
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+#checkout table tr
+{
+    padding: 0;
+    margin: 0;
+    height: 60px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+#checkout td:nth-child(2)
+{
+    color: rgb(163, 73, 164);
+}
+
+#finish_buy
+{
+    position: relative;
+    left: 210px;
+}
+
+#noservice
+{
+    position: relative;
+    left: 0%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/*********** ESTILOS DEL ARCHIVO DERECHA.PHP ***************************************************/
+
+.gridbkg
+{
+    background-image:url('botones/grids.gif');
+}
+
+
+.no_emptycart2
+{
+    position: absolute;
+    top: 150px;
+    left: 0;
+    padding: 10px;;
+    font-size: 20px;
+    color: gray;
+}

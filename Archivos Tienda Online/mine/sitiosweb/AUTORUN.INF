@@ -1,0 +1,5 @@
+[autorun]
+OPEN=shelexec.exe \index.html
+icon=ini.bmp
+
+

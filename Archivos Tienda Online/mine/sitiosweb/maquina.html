@@ -1,0 +1,47 @@
+<html>
+<head>
+<script language="javascript" type="text/javascript">
+<!--
+function playSound(archmus) {
+          document.embeds[archmus].play();
+          }
+
+
+
+/*----------------------------- Script del Banner ---------------------------------------- */
+
+var banner, nr, totall;
+banner = new Array("botones/b00.jpg","botones/b0.jpg","botones/b1.jpg","botones/b2.jpg","botones/b3.jpg","botones/banner.gif");
+
+nr=0;
+totall=6;
+function bann () {
+                    var largo=3000;
+                    if ( nr==totall ) {  nr=0; }
+                    document.images['banner'].src=banner[nr];
+                    nr++;
+                    if ( nr==4 ) {largo=4000; }
+                    if (nr==6) { largo=10000; }
+                    setTimeout("bann()",largo);
+                  }
+
+//--></script>
+
+<style type="text/css">
+<!--
+    .banner {position:absolute; left:0px; top:0px; width:890px; height:74px; background-color:black; }
+  
+
+//--></style></head>
+
+
+<BODY onLoad="playSound('inicio');setTimeout('bann()',10000)" leftmargin=0 topmargin=0 bgcolor="#f5f5f5">
+
+
+     <IMG CLASS=banner SRC="botones/banner.gif" name="banner" id="banner">
+
+
+<embed src="inicio.wav" name="inicio" hidden=true loop=false>
+
+</body>
+</html>

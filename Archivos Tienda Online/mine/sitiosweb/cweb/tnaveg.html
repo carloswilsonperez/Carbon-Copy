@@ -1,0 +1,70 @@
+<html>
+  <head>
+
+    <link rel="stylesheet" type="text/css" href="browser.css">
+    <script src="javanavy.js" language="javascript" type="text/javascript"></script>
+   
+</head>
+
+ <body onLoad="maquina_escribir();bann();setTimeout('cambia()',5000)" bgcolor=navy>
+
+
+
+
+<DIV CLASS=zonaescape ID=ze onMouseover="close_menu1();close_menu2();close_menu3();close_menu4();close_menu5()">
+
+<img class=banner src="botones/b0.jpg" id="anuncio" name="anuncio" width=581 height=50 />
+
+<div class=cromo id=vid0>
+<img src="" dynsrc="fotos/at58.avi" loop=infinite >
+</div>
+<div class=video1 id=vid1>
+<img src="" dynsrc="fotos/am1.avi"  loop=infinite onMouseover="abretigre()">
+</div>
+<div class=video2 id=vid2>
+<img src="" dynsrc="fotos/at43.avi" loop=infinite onMouseover="abrevamosat()">
+</div>
+<div class=video3 id=vid3>
+<img src="" dynsrc="fotos/at28.avi" loop=infinite onMouseover="abrepceiba()">
+</div>
+
+<div style="position:absolute; left:830px; top:4px; background-color:black; width:70px; height:60px; font-family:Verdana,Arial">
+<table style="color: white; font-size: 10px">
+       <tr><td align=center>Música</td></tr>
+       <tr><td align=center>típica</td></tr>
+       <tr><td align=center>de Tabasco</td></tr>
+</table>
+</div>
+
+
+   </DIV>
+
+
+<div style="visibility:hidden;z-index:2" id=seguridad>
+
+
+<img class=coloca_boton1f ID=b1 src="botones/menu1s.jpg">
+<img class=coloca_boton2f ID=b2 src="botones/menu2s.jpg">
+<img class=coloca_boton3f ID=b3 src="botones/menu3s.jpg">
+<img class=coloca_boton4f ID=b4 src="botones/menu4s.jpg">
+<img class=coloca_boton5f ID=b5 src="botones/menu5s.jpg">
+
+</div>
+
+<div style="visibility:visible;z-index:1" id=navegador>
+
+<img class=coloca_boton1 ID=b1 onMouseover="close_menu2();close_menu3();close_menu4();close_menu5();abre_menu1();document.images['b1'].src=boton1.src" onMouseout="document.images['b1'].src=boton1s.src"     src="botones/menu1s.jpg">
+<img class=coloca_boton2 ID=b2 onMouseover="close_menu1();close_menu3();close_menu4();close_menu5();abre_menu2();document.images['b2'].src=boton2.src" onMouseout="document.images['b2'].src=boton2s.src"     src="botones/menu2s.jpg">
+<img class=coloca_boton3 ID=b3 onMouseover="close_menu1();close_menu2();close_menu4();close_menu5();abre_menu3();document.images['b3'].src=boton3.src" onMouseout="document.images['b3'].src=boton3s.src"     src="botones/menu3s.jpg">
+<img class=coloca_boton4 ID=b4 onMouseover="close_menu1();close_menu2();close_menu3();close_menu5();abre_menu4();document.images['b4'].src=boton4.src" onMouseout="document.images['b4'].src=boton4s.src"     src="botones/menu4s.jpg">
+<img class=coloca_boton5 ID=b5 onMouseover="close_menu1();close_menu2();close_menu3();close_menu4();abre_menu5();document.images['b5'].src=boton5.src" onMouseout="document.images['b5'].src=boton5s.src"     src="botones/menu5s.jpg">
+
+</div>
+
+
+<DIV CLASS=maquina><form name="form1" id="form1">
+     <input type="text" name="campotexto" id="campotexto" size="32" />
+   </form></DIV>
+
+  </body>
+  </html>

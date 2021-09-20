@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+    <html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <title>Barra de Botones de Navegación</title>
+        <script language="javascript" type="text/javascript">
+        <!--
+   
+
+            var texto="Me da Mucho Gusto que me Visites!!      Mis mails: cwilson1974@hotmail.com     cwilson1974@yahoo.com.mx";
+            var visualizacion="inicio";
+            function mueve() 
+                {
+                      if (visualizacion=="inicio") {  for (var i=1; i<=140; i++)
+                                                          { texto=" "+texto; }
+                                                       visualizacion=texto;
+                                                   }
+                      visualizacion=visualizacion.substring(1,visualizacion.length);
+                      window.status=visualizacion;
+                      if (visualizacion=="") { visualizacion=texto; }
+                      setTimeout ("mueve()",60);
+                     }
+
+  function tiempo() {
+    var tiempo, hora, min, seg, horario;
+    tiempo = new Date();
+    hora = tiempo.getHours();  if (hora>12) {hora=hora - 12;
+                                             document.form2.boton2.value="PM"; }
+
+                                   else     {document.form2.boton2.value="AM"; }
+    if (hora<10) {hora="0" + hora; }
+    min = tiempo.getMinutes(); if (min<10) {min="0" + min; }
+    seg = tiempo.getSeconds(); if (seg<10) {seg="0" + seg; }
+    horario=hora + ":" + min + ":" + seg;
+    document.form1.boton.value=horario;
+    setTimeout ("tiempo()",1000);
+  }
+
+function envia(id)
+{
+    //document.forms['catalogo'].elige.value = categ;
+    //document.forms['catalogo'].submit();
+    
+    switch (id){
+        case '1': 
+            parent.naver.document.location.href = "pos/naver.php";
+            top.presen.document.location.href = "pos/presen.php";
+            break;
+        case '2': 
+            top.naver.document.location.href = "pos/naver.php";
+            top.presen.document.location.href = "pos/presen.php";
+            break;
+        case '3':
+            top.naver.document.location.href = "edit/naver.php";
+            top.presen.document.location.href = "edit/presen.php";
+            break;
+        case '4':
+            top.naver.document.location.href = "add_delete/naver.php";
+            top.presen.document.location.href = "add_delete/addordelete.php";
+            break;
+        case '5':
+        case '6':
+    }
+}
+
+//-->
+</script>
+
+<style type="text/css">
+    
+.containermenu {
+        position: absolute; 
+        top: 150px; 
+        left: 0px; 
+        width: 300px; 
+        height: 600px; 
+        background-color: white; 
+        }
+        
+.menu {
+    position: absolute; 
+    top: 10px; 
+    left: 0px; 
+    width: 300px; 
+    background-color: white;
+    }
+    
+.reloj {
+    position: absolute; 
+    top: 360px; 
+    left: 0px
+    }
+    
+.merid {
+    position: absolute; 
+    top: 390px; 
+    left: 0px;
+    }
+     
+body {
+        background-color:#DEDEDE; 
+        font-family:verdana;
+        }
+        
+table {
+        font-family:verdana; 
+        font-size:10pt; 
+        }
+        
+    td {border-bottom: solid 1px blue; }
+    a:link {text-decoration:none; color:black;}
+    a:visited {text-decoration:none; color:navy;}
+    a:hover {text-decoration:underline; font-weight: bold; background-color: #F2F2F2;}
+    a:active {text-decoration:none;}
+    
+.logo {
+        position:absolute;
+        left: 0px;
+        top: 0px;
+        height: 250px;
+        background-color: white;
+        }    
+   
+</style>
+
+</head>
+
+
+<body onLoad="mueve();tiempo()" leftmargin=0 topmargin=0>
+    
+    
+    <div id="logo" class="logo">
+        <img src="botones/logo.png" width="220" height="130" />
+    </div>
+    
+    
+    <div class=containermenu>
+        <div class="menu">
+    
+            <table width='210'>
+                <tr>
+                    <td>
+                    <a href="javascript:envia('1')">Terminal Punto de Venta</a> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <a href="javascript:envia('2')">Buscador de Productos</a>
+                    </td>
+                </tr>
+	           <tr>
+	               <td>
+	               <a href="javascript:envia('3')">Editar Productos</a>
+	               </td>
+	           </tr>
+	           <tr>
+	               <td>
+	               <a href="javascript:envia('4')">Agregar/Elimnar Productos</a>
+	               </td>
+	           </tr>
+	           <tr>
+	               <td>
+	               <a href="javascript:envia('5')">Exportar Tabla</a>
+	               </td>
+	           </tr>
+	           <tr>
+	               <td>
+	               <a href="javascript:envia('6')">Otro</a>
+	               </td>
+	           </tr>
+	           
+       
+        </table>
+
+    </div>
+
+
+    <div class='reloj'>
+        <form name="form1" id="form1">
+            <input type="button" name="boton" id="boton" value="- Hora -"  style="color:#fffaf0; background-color:#0099CC" />
+        </form>
+    </div>
+    <div class='merid'>
+        <form name="form2" id="form2">
+            <input type="button" name="boton2" id="boton2" value="- AM -"  style="color:#fffaf0; background-color:#0099CC" />
+        </form>
+    </div>
+
+    <form action="catalogo.php" method="POST" name="catalogo" target="presen">
+        <input type="hidden" size="12" name="elige">
+    </form>
+
+</div>
+</body>
+</html>
